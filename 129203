@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Alaina🎉🎊</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: radial-gradient(circle, #ff7eb3, #ff758c, #ff6a64, #ff9d2f, #ffcc33);
+            background-attachment: fixed;
+            background-size: cover;
+            color: white;
+            overflow: hidden;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin: 20px;
+            animation: textBounce 2s infinite alternate;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Media Styles */
+        .media {
+          Display: flex;
+            border-radius: 60px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+            transform: scale(1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .media:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        img, video {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        /* Birthday Message */
+        .message {
+          Height:150px;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 15px;
+            animation: glow 2s infinite alternate;
+        }
+
+        /* Animations */
+        @keyframes textBounce {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 10px #ffcc33, 0 0 20px #ff758c;
+            }
+            to {
+                box-shadow: 0 0 20px #ffcc33, 0 0 30px #ff758c;
+            }
+        }
+
+        @keyframes confetti {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 Happy Birthday, Alaina🎉</h1>
+    <div class="container">
+        <!-- Images -->
+        <div class="media">
+            <img src="photo1.jpg" alt="Photo 1">
+        </div>
+        <div class="media">
+            <img src="photo2.jpg" alt="Photo 2">
+        </div>
+
+        <!-- Videos -->
+        <div class="media">
+            <video src="video1.mp4"  muted autoplay loop></video>
+        </div>
+
+
+        </div>
+    </div>
+
+    <!-- Message -->
+    <div class="message">
+        <h2>Wishing you a day as amazing as you are! 🎂🎁 May your dreams come true! 💖</h2>
+    </div>
+</body>
+</html>
